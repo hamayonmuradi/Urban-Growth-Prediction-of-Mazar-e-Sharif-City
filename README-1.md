@@ -78,7 +78,7 @@ This work was developed as a bachelor's thesis in GIS and Remote Sensing at Kabu
 |---------|-------------|--------|
 | Landsat imagery | Multi-temporal satellite scenes for 2003, 2013 and 2023 | USGS / Earth Explorer |
 | LULC maps | Classified from the Landsat imagery | Produced in this study |
-| Administrative boundary | City / study area boundary | <!-- TODO: add source --> |
+| Administrative boundary | City / study area boundary | UN Habitat |
 
 <!-- TODO: list the Landsat sensors and acquisition dates (e.g. Landsat 7 ETM+ / 8 OLI), spatial resolution (30 m), the LULC classes, and any driver/suitability layers used (distance to roads, slope, etc.). -->
 
@@ -131,7 +131,7 @@ This work was developed as a bachelor's thesis in GIS and Remote Sensing at Kabu
 |--------|-------|
 | LULC classification overall accuracy | 90.6 |
 | LULC classification Kappa | 0.82 |
-| Simulation vs. actual 2023 (Kappa: 0.80 / Overall: 0.87) | 
+| Simulation vs. actual 2023 (Kappa / Overall) | 0.80 / 87 | 
 
 ---
 
@@ -158,5 +158,5 @@ This work was developed as a bachelor's thesis in GIS and Remote Sensing at Kabu
 GIS and Remote Sensing graduate, Kabul Polytechnic University
 
 - GitHub: [@hamayonmuradi](https://github.com/hamayonmuradi)
-- Email: <!-- TODO: add email -->
+- Email: hamayonmuradi8@gmail.com
 
