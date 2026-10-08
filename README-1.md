@@ -8,7 +8,7 @@
 > Analysis of 20 years of urban expansion in Mazar-e-Sharif (2003-2023) from Landsat imagery, and a simulation of likely built-up growth to 2033 using a CA-Markov model.
 
 <p align="center">
-  <img src="2033_prediction_map.png" alt="Predicted urban growth of Mazar-e-Sharif in 2033" width="85%">
+  <img src="prediction_map.jpg" alt="Predicted urban growth of Mazar-e-Sharif in 2033" width="85%">
 </p>
 
 ---
@@ -86,27 +86,7 @@ This work was developed as a bachelor's thesis in GIS and Remote Sensing at Kabu
 
 ## Methodology
 
-```
-Landsat imagery (2003, 2013, 2023)
-        |
-        v
-Pre-processing (radiometric / atmospheric correction, layer stacking, clipping)
-        |
-        v
-LULC classification + accuracy assessment
-        |
-        v
-Change detection (2003-2013, 2013-2023)
-        |
-        v
-Markov Chain analysis  -->  transition probability matrix
-        |
-        v
-Cellular Automata (suitability maps + contiguity filter)
-        |
-        v
-Urban growth prediction for 2033
-```
+![Methodology flowchart](methodology.jpg)
 
 1. **Satellite image preprocessing**: preparing and clipping the Landsat scenes to the study area.
 2. **LULC classification**: classifying each date into land-cover classes.
@@ -122,16 +102,24 @@ Urban growth prediction for 2033
 ## Results
 
 ### LULC maps (2003, 2013, 2023)
-![LULC Maps](LULC_maps.png)
+![2003 LULC Map](2003lulc.jpg)
+![2013 LULC Maps](2013lulc.jpg)
+![2023 LULC Maps](2023lulc.jpg)
 
 ### LULC changes
-![LULC Changes](LULC_change.png)
+![LULC Changes](2003_2033_changes.jpg)
 
 ### LULC change chart
-![LULC Change Chart](LULC_change_chart.png)
+![LULC Change Chart](2003_2033_change_chart.jpg)
 
 ### Predicted urban extent in 2033
-![2033 Prediction](2033_prediction_map.png)
+![2033 Prediction](prediction_map.jpg)
+
+### Urban growth trend
+![Urban growth](growth_trend.jpg)
+
+### Urban growth trend chart
+![Urban growth chart](growth_trend_chart.jpg)
 
 ---
 
@@ -141,9 +129,9 @@ Urban growth prediction for 2033
 
 | Metric | Value |
 |--------|-------|
-| LULC classification overall accuracy | <!-- TODO --> |
-| LULC classification Kappa | <!-- TODO --> |
-| Simulation vs. actual 2023 (Kappa / overall agreement) | <!-- TODO --> |
+| LULC classification overall accuracy | 90.6 |
+| LULC classification Kappa | 0.82 |
+| Simulation vs. actual 2023 (Kappa: 0.80 / Overall: 0.87) | 
 
 ---
 
