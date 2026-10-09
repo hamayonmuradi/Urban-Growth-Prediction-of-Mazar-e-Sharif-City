@@ -58,7 +58,7 @@ This work was developed as a bachelor's thesis in GIS and Remote Sensing at Kabu
 
 **Mazar-e-Sharif**, Balkh Province, Afghanistan.
 
-<!-- TODO: add a study area / location map and the approximate coordinates and extent used for the analysis. -->
+![Mazar-e-Sharif](study_area.jpg)
 
 ---
 
