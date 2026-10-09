@@ -24,9 +24,8 @@
 - [Model Validation](#model-validation)
 - [Limitations](#limitations)
 - [Software](#software)
-- [Repository Structure](#repository-structure)
 - [Author](#author)
-- [Citation](#citation)
+
 
 ---
 
