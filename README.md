@@ -21,7 +21,6 @@
 - [Data](#data)
 - [Methodology](#methodology)
 - [Results](#results)
-- [Model Validation](#model-validation)
 - [Limitations](#limitations)
 - [Software](#software)
 - [Author](#author)
@@ -79,8 +78,6 @@ This work was developed as a bachelor's thesis in GIS and Remote Sensing at Kabu
 | LULC maps | Classified from the Landsat imagery | Produced in this study |
 | Administrative boundary | City / study area boundary | UN Habitat |
 
-<!-- TODO: list the Landsat sensors and acquisition dates (e.g. Landsat 7 ETM+ / 8 OLI), spatial resolution (30 m), the LULC classes, and any driver/suitability layers used (distance to roads, slope, etc.). -->
-
 ---
 
 ## Methodology
@@ -93,8 +90,6 @@ This work was developed as a bachelor's thesis in GIS and Remote Sensing at Kabu
 4. **Markov Chain analysis**: calculating transition probabilities between classes.
 5. **Cellular Automata modeling**: allocating the projected change spatially.
 6. **2033 prediction**: producing the simulated land-cover map.
-
-<!-- TODO: add the CA-Markov settings: base years used for the Markov matrix, number of iterations, contiguity filter size (e.g. 5x5), and the driver/suitability layers and how they were built. -->
 
 ---
 
@@ -122,23 +117,11 @@ This work was developed as a bachelor's thesis in GIS and Remote Sensing at Kabu
 
 ---
 
-## Model Validation
-
-<!-- TODO: fill in. CA-Markov results are only credible with validation. A common approach: simulate a known year (e.g. predict 2023 from 2003 and 2013) and compare it with the actual 2023 map. -->
-
-| Metric | Value |
-|--------|-------|
-| LULC classification overall accuracy | 90.6 |
-| LULC classification Kappa | 0.82 |
-| Simulation vs. actual 2023 (Kappa / Overall) | 0.80 / 87 | 
-
----
-
 ## Limitations
 
 - The prediction is a **modeled scenario**. It assumes future change follows the historical transition patterns and the model's assumptions.
 - Policy changes, master plans, economic conditions, population movement and security conditions are not represented in the model.
-- Classification accuracy of the Landsat-derived maps (30 m resolution) affects the transition probabilities and the final simulation.
+- Classification accuracy of the Landsat-derived maps (15 m resolution after pansharpning) affects the transition probabilities and the final simulation.
 - Mixed pixels in a dense urban fringe can cause confusion between built-up, bare land and agriculture.
 
 ---
